@@ -48,7 +48,7 @@ example("Nolitha!")
 
 const greet = (surname) => {return "hello " + surname + "!"}
 
-document.write(greet("Magagula")
+document.write(greet("Magagula"))
 
 /* Define an arrow function divideByTwo which accepts a number and returns 
 that number divided by 2 */
