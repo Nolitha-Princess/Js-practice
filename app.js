@@ -53,9 +53,9 @@ document.write(greet("Magagula")
 /* Define an arrow function divideByTwo which accepts a number and returns 
 that number divided by 2 */
 
-const divideByTwo = (num) => {return num / 2}
+const divide = (num) => {return num / 2};
 
-document.write(divideByTwo(8))
+document.write(divideByTwo(8));
 
 
 //LOOPS
@@ -254,5 +254,25 @@ function goodBye(word){
  
 goodBye("Goodbye")
 
+//Count vowels 
+/* write a method that counts vowels(word) that takes in a string and returns the number of vowels in the word. Vowels are letters
+a, e, i, o, u. */
+
+function vowelsCount(word){
+    let count = 0;
+    let vowels = 'aeiou';
+    for(let i = 0; i < word.length; i++){
+        if(vowels.indexOf(word[i].toLowerCase()) > -1){
+                count++;
+        }
+        }
+        return count;
+       }
+      
+console.log(vowelsCount('How many vowels are here'))
+
+// indexOf shows the index of the letter in the string
+// whenever the letter is not included in the string, it shows a -1 but when the letter is there it will show the index position of that
+// letter which is from zero to 4 i.e aeiou (0-4), therefore whenever the number is above -1, the counter will add 1/go up by 1
 
 
